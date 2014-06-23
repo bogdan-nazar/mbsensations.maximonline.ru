@@ -1,0 +1,879 @@
+@font-face {
+    font-family:'PTSans CaptionBold';
+    src:url('../fonts/ptsans/ptsans-caption-bold.eot');
+    src:url('../fonts/ptsans/ptsans-caption-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ptsans/ptsans-caption-bold.woff') format('woff'),
+         url('../fonts/ptsans/ptsans-caption-bold.ttf') format('truetype');
+}
+html, body {
+	width:100%;
+	height:100%;
+	font-size:80%;
+}
+body {
+	background-color:#000;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}
+body video {
+	position:absolute;
+	left:-10000px;
+	top:-10000px;
+}
+.promo_benz {}
+.promo_benz * {
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.promo_benz .res-loader {
+	position:absolute;
+	left:28%;
+	top:50%;
+	right:0;
+	bottom:0;
+	color:#fff;
+}
+.promo_benz .res-loader a.logo {
+	display:inline-block;
+	width:170px;
+	height:43px;
+	margin:0 0 42px -53px;
+	background:url('../media/benz-logo.png');
+}
+.promo_benz .res-loader .progress {
+	width:100%;
+	height:3px;
+	background:url('../images/preloader.gif') left top repeat-x;
+}
+.promo_benz .res-loader .progress .inner {
+	width:1px;
+	height:3px;
+	background:url('../images/preloader.gif') left -3px repeat-x;
+}
+.promo_benz .res-loader .title {
+	padding-top:5px;
+	font-size:2.8em;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	text-transform:uppercase;
+	color:#fff;
+}
+.promo_benz .main {
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.promo_benz .main .sections {
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.promo_benz .main .sections .header-bg {
+	position:absolute;
+	width:100%;
+	height:80px;
+	left:0;
+	top:0;
+	z-index:100;
+}
+.promo_benz .main .sections .header-cont {
+	position:absolute;
+	width:100%;
+	height:80px;
+	left:0;
+	top:0;
+	background-color:transparent;
+	z-index:101;
+}
+.promo_benz .main .sections .header-cont .left,
+.promo_benz .main .sections .header-cont .right {
+	display:inline-block;
+	width:50%;
+	height:100%;
+	vertical-align:top;
+}
+.promo_benz .main .sections .header-cont .right {
+	text-align:right;
+}
+.promo_benz .main .sections .header-cont .vsp {
+	display:inline-block;
+	height:100%;
+	width:40px;
+	vertical-align:middle;
+}
+.promo_benz .main .sections .header-cont .left .benz-logo {
+	display:inline-block;
+	vertical-align:middle;
+	border:0;
+}
+.promo_benz .main .sections .header-cont .left .vline {
+	display:inline-block;
+	width:10px;
+	height:40px;
+	/*border-right:1px solid #3b3f40;*/
+	vertical-align:middle;
+}
+.promo_benz .main .sections .header-cont .left .maxim-logo {
+	display:inline-block;
+	padding-left:40px;
+	vertical-align:middle;
+}
+.promo_benz .main .sections .header-cont .left .go-home {
+	display:inline-block;
+	padding:3px 0 0 22px;
+	height:13px;
+	vertical-align:middle;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	color:#666;
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+.promo_benz .main .sections .header-cont .right .sn {
+	display:inline-block;
+	padding:0 5px;
+	color:#666;
+	font-family:Arial;
+	font-size:1.1em;
+	vertical-align:middle;
+}
+.promo_benz .main .sections .header-cont .right .sn.last {
+	width:40px;
+}
+.promo_benz .main .sections .header-cont .right .fb-icn,
+.promo_benz .main .sections .header-cont .right .yt-icn {
+	display:inline-block;
+	vertical-align:middle;
+}
+.promo_benz .main .sections .header-cont .right img {
+	border:0;
+}
+.promo_benz .main .sections .slide {
+	position:absolute;
+	top:80px;
+	bottom:45px;
+	border-left:1px solid #3c413e;
+	overflow:hidden;
+}
+.promo_benz .main .sections .slide.street {
+	left:0;
+	right:85%;
+	border:0;
+	background-position:left bottom;
+}
+.promo_benz .main .sections .slide.club {
+	left:15%;
+	right:70%;
+}
+.promo_benz .main .sections .slide.vogue {
+	left:30%;
+	right:55%;
+}
+.promo_benz .main .sections .slide.jazz {
+	left:45%;
+	right:40%;
+}
+.promo_benz .main .sections .slide.hiphop {
+	left:60%;
+	right:25%;
+}
+.promo_benz .main .sections .slide.gla {
+	left:75%;
+	right:0;
+	cursor:default;
+	background-color:#000;
+}
+.promo_benz .main .sections .slide .cover {
+	display:block;
+	position:absolute;
+	left:auto;
+	top:auto;
+	right:0;
+	bottom:50px;
+}
+.promo_benz .main .sections .slide.gla .cover {
+	display:none;
+	bottom:0;
+}
+.promo_benz .main .sections .slide.gla .promo {
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	overflow:hidden;
+}
+.promo_benz .main .sections .slide.gla .promo .title {
+	padding:16px 0 0 10%;
+	font-size:2.8em;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	text-transform:uppercase;
+	color:#fff;
+}
+.promo_benz .main .sections .slide.gla .promo .prompt {
+	padding:16px 20px 0 10%;
+	line-height:140%;
+	font-size:1.2em;
+	font-family:Arial, sans-serif;
+	color:#ccc;
+}
+.promo_benz.font83 .main .sections .slide.gla .promo .prompt {
+	font-size:1.3em;
+}
+.promo_benz.font84 .main .sections .slide.gla .promo .prompt {
+	font-size:1.4em;
+}
+.promo_benz .main .sections .slide.gla .promo .prompt.pt10 {
+	padding-top:10px;
+}
+.promo_benz .main .sections .slide.gla .btn-video {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:auto;
+	left:0;
+	bottom:0;
+	cursor:pointer;
+}
+.promo_benz .main .sections .slide.gla .btn-video-title {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:70px;
+	font-size:1.2em;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	color:#06a0db;
+	cursor:pointer;
+}
+.promo_benz.font83 .main .sections .slide.gla .btn-video-title {
+	font-size:1.4em;
+}
+.promo_benz.font84 .main .sections .slide.gla .btn-video-title {
+	font-size:1.6em;
+}
+.promo_benz .main .sections .slide video {
+	position:absolute;
+	left:auto;
+	top:auto;
+	right:0;
+	bottom:50px;
+}
+.promo_benz .main .sections .slide .shad {
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:50px;
+	background-color:#191919;
+	-khtml-opacity:0.0;
+	-moz-opacity:0.0;
+	-webkit-opacity:0.0;
+	opacity:0.0;
+	overflow:hidden;
+	cursor:pointer;
+}
+.promo_benz .main .sections .slide .btn {
+	position:absolute;
+	height:50px;
+	width:100%;
+	bottom:0;
+	background:url('../images/bg-btn.gif') left top repeat;
+	cursor:pointer;
+}
+.promo_benz .main .sections .slide .btn .title {
+	position:absolute;
+	height:40px;
+	padding-top:10px;
+	left:0;
+	right:0;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:2.1em;
+	text-align:center;
+	text-transform:uppercase;
+	color:#090909;
+	overflow:hidden;
+	cursor:pointer;
+}
+.promo_benz .main .sections .slide .btn .hover {
+	position:absolute;
+	height:50px;
+	left:0;
+	right:0;
+	-khtml-opacity: 0.0;
+	-moz-opacity: 0.0;
+	-webkit-opacity: 0.0;
+	opacity: 0.0;
+	background:url('../images/bg-btn-hover.png') left top repeat-x;
+	cursor:pointer;
+}
+.promo_benz .main .sections .slide.street .inner {
+	background-position:left top;
+}
+.promo_benz .main .sections .slide.gla .inner {
+	border:none;
+	background-position:right center;
+	background-size:auto 100%;
+}
+.promo_benz .main .sections .slide.gla .btn {
+	background:none;
+}
+.promo_benz .main .sections .slide.gla .btn .title {
+	color:#fff;
+}
+.promo_benz .main .sections .slide.gla .shad {
+	cursor:default;
+}
+.promo_benz .main .sections .menu-btn {
+	position:absolute;
+	display:none;
+	height:50px;
+	bottom:45px;
+	border-left:1px solid #3c413e;
+	background:url('../images/bg-btn.gif') left top repeat;
+	z-index:999;
+}
+.promo_benz .main .sections .menu-btn .title {
+	position:absolute;
+	height:40px;
+	padding-top:10px;
+	left:0;
+	right:0;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:2.1em;
+	text-align:center;
+	text-transform:uppercase;
+	color:#090909;
+	overflow:hidden;
+	cursor:pointer;
+}
+.promo_benz .main .sections .menu-btn .hover {
+	position:absolute;
+	height:50px;
+	left:0;
+	right:0;
+	-khtml-opacity: 0.0;
+	-moz-opacity: 0.0;
+	-webkit-opacity: 0.0;
+	opacity: 0.0;
+	background:url('../images/bg-btn-hover.png') left top repeat;
+	cursor:pointer;
+}
+.promo_benz .main .sections .menu-btn.street {
+	left:0;
+	right:85%;
+	border:none;
+}
+.promo_benz .main .sections .menu-btn.club {
+	left:15%;
+	right:70%;
+}
+.promo_benz .main .sections .menu-btn.vogue {
+	left:30%;
+	right:55%;
+}
+.promo_benz .main .sections .menu-btn.jazz {
+	left:45%;
+	right:40%;
+}
+.promo_benz .main .sections .menu-btn.hiphop {
+	left:60%;
+	right:25%;
+}
+.promo_benz .main .sections .menu-btn.gla {
+	left:75%;
+	right:0;
+	background:none;
+}
+.promo_benz .main .sections .menu-btn.gla .title,
+.promo_benz .main .sections .menu-btn.act .title {
+	color:#fff;
+}
+.promo_benz .main .sections .menu-btn.act .hover,
+.promo_benz .main .sections .menu-btn.act .hover:hover {
+	background:url('../images/bg-btn-act.png') left top repeat;
+}
+.promo_benz .main .sections .what-dance {
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	bottom:0;
+	z-index:1001;
+	overflow:hidden;
+}
+.promo_benz .main .sections .what-dance .inner {
+	position:absolute;
+	width:75%;
+	left:0;
+	bottom:0;
+	padding-bottom:125px;
+	font-size:4.8em;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	color:#fff;
+	text-align:center;
+	text-transform:uppercase;
+	line-height:100%;
+}
+.promo_benz .main .sections .what-dance .inner .inner2 {
+	padding-top:10px;
+	font-size:50%;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	color:#fff;
+	text-align:center;
+	text-transform:uppercase;
+	line-height:100%;
+}
+.promo_benz .main .sections .footer {
+	position:absolute;
+	width:100%;
+	height:40px;
+	padding-top:5px;
+	left:0;
+	bottom:0;
+	margin-top:-45px;
+	background-color:#000a03;
+	font-size:1em;
+	font-family:Arial,sans-serif;
+	color:#6b6e70;
+	text-align:center;
+	z-index:1000;
+	overflow:hidden;
+}
+.promo_benz .main .sections .footer a {
+	display:inline-block;
+	color:#00adef;
+	text-decoration:none;
+}
+.promo_benz .main .sections .footer .left,
+.promo_benz .main .sections .footer .right {
+	display:inline-block;
+	height:40px;
+	vertical-align:top;
+	overflow:hidden;
+}
+.promo_benz .main .sections .footer .left {
+	text-align:right;
+	width:47%;
+	height:40px;
+}
+.promo_benz .main .sections .footer .left .like-aligner {
+	display:inline-block;
+	width:0;
+	height:40px;
+	vertical-align:middle;
+}
+.promo_benz .main .sections .footer .left .like-item {
+	display:inline-block;
+	padding-left:15px;
+	vertical-align:middle;
+}
+.promo_benz .main .sections .footer .left .like-item.vk {
+	margin-top:-3px;
+	width:150px;
+	overflow:hidden;
+}
+.promo_benz .main .sections .footer .left .like-item.tw {
+	padding-left:10px;
+	width:100px;
+	overflow:hidden;
+}
+.promo_benz .main .sections .footer .right {
+	text-align:left;
+	width:53%;
+}
+.promo_benz .main .sections .footer .right .top-copy {
+	padding:3px 0 3px 30px;
+	overflow:hidden;
+}
+.promo_benz .main .sections .footer .right .bot-links {
+	padding-left:30px;
+	overflow:hidden;
+}
+.promo_benz .main .sections .footer .right .bot-links a.benz {
+	padding-left:9%;
+}
+.promo_benz .main .sections .section {
+	position:absolute;
+	display:none;
+	top:80px;
+	bottom:95px;
+	background-color:#050505;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section video {
+	position:absolute;
+	top:auto;
+	left:0;
+	bottom:0;
+}
+.promo_benz .main .sections .section .left {
+	position:absolute;
+	width:180px;
+	top:0;
+	bottom:0;
+	right:35%;
+	background:url('../images/bg-sect-left.png') left top repeat-y;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .right {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:65%;
+	right:0;
+	background-color:#050505;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .info {
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:38%;
+	right:0;
+}
+.promo_benz.flat1280 .main .sections .section .info {
+	width:48%;
+}
+.promo_benz .main .sections .section .info .title {
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:4.8em;
+	padding:16px 0 5px 40px;
+	color:#fff;
+	text-transform:uppercase;
+}
+.promo_benz .main .sections .section.gla .info .title {
+	padding-top:16px;
+}
+.promo_benz .main .sections .section .info .subtitle {
+	padding:0 0 16px 40px;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:2.0em;
+	color:#fff;
+}
+.promo_benz .main .sections .section .info .text {
+	padding:0 30px 0 40px;
+	font-family:Arial, sans-serif;
+	font-size:1.1em;
+	color:#ccc;
+	line-height:150%;
+}
+.promo_benz.font83 .main .sections .section .info .text {
+	font-size:1.3em;
+}
+.promo_benz.font84 .main .sections .section .info .text {
+	font-size:1.5em;
+}
+.promo_benz.flat1280 .main .sections .section .info .text {
+	line-height:140%;
+}
+.promo_benz.flat1280 .main .sections .section .info .title {
+	padding:16px 0 0 40px;
+}
+.promo_benz.flat1280 .main .sections .section .info .subtitle {
+	padding:0 0 5px 40px;
+}
+.promo_benz .main .sections .section .btn-compl {
+	position:absolute;
+	width:60px;
+	height:43px;
+	right:245px;
+	bottom:25px;
+	padding:68px 0 0 130px;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:1.2em;
+	color:#06a0db;
+	text-transform:uppercase;
+	background-position:left top;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+.promo_benz .main .sections .section a.btn-model {
+	position:absolute;
+	width:88px;
+	height:0;
+	right:40px;
+	bottom:68px;
+	padding:63px 0 0 15px;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:1.2em;
+	color:#06a0db;
+	text-transform:uppercase;
+	text-decoration:none;
+	background-position:left top;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+.promo_benz .main .sections .section.gla {
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.promo_benz .main .sections .section.gla video {
+	position:absolute;
+	left:3%;
+}
+.promo_benz .main .sections .section.gla .info {
+	width:auto;
+	left:75%;
+}
+.promo_benz.flat1280 .main .sections .section.gla .info {
+	left:65%;
+}
+.promo_benz .main .sections .section.gla .info .title {
+	padding-right:0;
+	font-size:2.8em;
+}
+.promo_benz .main .sections .slide.gla .tag,
+.promo_benz .main .sections .section.gla .tag {
+	color:#00acee;
+}
+.promo_benz .main .sections .section.gla .take-part {
+	display:inline-block;
+	padding:5px 5px 0 40px;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:2.1em;
+	color:#00acee;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+.promo_benz .main .sections .section.gla .info-sub {
+	position:absolute;
+	left:75%;
+	padding-left:40px;
+	bottom:27px;
+}
+.promo_benz.flat1280 .main .sections .section.gla .info-sub {
+	left:65%;
+}
+.promo_benz .main .sections .section.gla .info-sub .new-gla {
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:4.06em;
+	color:#fff;
+	text-transform:uppercase;
+}
+.promo_benz .main .sections .section.gla .info-sub .new-gla-sub {
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:1.1em;
+	color:#fff;
+	text-transform:uppercase;
+}
+.promo_benz .main .sections .section .player {
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:100%;
+}
+.promo_benz .main .sections .section .player .btn-info {
+	position:absolute;
+	width:16px;
+	height:16px;
+	background:url('../images/bg-btn-info.png') center no-repeat;
+	cursor:pointer;
+}
+.promo_benz .main .sections .section .player .sys-baloon {
+	position:absolute;
+	left:8.7%;
+	top:9.7%;
+}
+.promo_benz .main .sections .section .player .sys-baloon .sys-tit {
+	padding-bottom:3px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	font-weight:bold;
+	line-height:160%;
+	color:#fff;
+}
+.promo_benz .main .sections .section .player .sys-baloon .sys-info {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	line-height:160%;
+	color:#999;
+}
+.promo_benz .main .sections .section .player .dot-baloon {
+	position:absolute;
+}
+.promo_benz .main .sections .section .player .dot-baloon .btit {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	font-weight:bold;
+	color:#fff;
+	padding-bottom:4px;
+}
+.promo_benz .main .sections .section .player .dot-baloon .binfo {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	color:#999;
+}
+.promo_benz .main .sections .section .player ._3d {
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:100%;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .player ._3d .frames {
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:100%;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .player ._3d .frames img {
+	position:absolute;
+	display:block;
+	left:0;
+	top:0;
+	width:100%;
+	height:auto;
+	border:none;
+}
+.promo_benz .main .sections .section .player ._3d .btn-int {
+	display:inline-block;
+	position:absolute;
+	left:8%;
+	bottom:45px;
+	font-size:1.2em;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	text-transform:uppercase;
+	color:#06a0db;
+	cursor:pointer;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .player ._3d .ctrl {
+	position:absolute;
+	left:50%;
+	bottom:0;
+	width:220px;
+	height:55px;
+	margin-left:-110px;
+}
+.promo_benz .main .sections .section .player ._3d .ctrl .btn {
+	display:inline-block;
+	width:36px;
+	height:18px;
+	vertical-align:top;
+	background-repeat:no-repeat;
+	background-position:left top;
+	cursor:pointer;
+}
+.promo_benz .main .sections .section .player ._3d .ctrl .btn.lt:hover {
+	background-position:left -18px;
+}
+.promo_benz .main .sections .section .player ._3d .ctrl .btn.rt {
+	background-position:-36px top;
+}
+.promo_benz .main .sections .section .player ._3d .ctrl .btn.rt:hover {
+	background-position:-36px -18px;
+}
+.promo_benz .main .sections .section .player ._3d .ctrl .prompt {
+	display:inline-block;
+	width:148px;
+	font-size:1em;
+	font-family:Arial,Helvetica, sans-serif;
+	text-align:center;
+	color:#999;
+	vertical-align:top;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .player .interior {
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:100%;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .player .interior img {
+	position:absolute;
+	display:block;
+	left:0;
+	width:100%;
+	height:auto;
+	border:none;
+}
+.promo_benz .main .sections .section .player .interior .btn-ext {
+	display:inline-block;
+	position:absolute;
+	left:8%;
+	bottom:45px;
+	font-size:1.2em;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	text-transform:uppercase;
+	color:#06a0db;
+	cursor:pointer;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .player .info-sub {
+	position:absolute;
+	top:10px;
+	left:62%;
+}
+.promo_benz .main .sections .section .player .info-sub .new-gla {
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:4.8em;
+	color:#fff;
+	text-transform:uppercase;
+}
+.promo_benz .main .sections .section .player .info-sub .new-gla-sub {
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:2.1em;
+	color:#fff;
+}
+.promo_benz .main .sections .section .player .info {
+	position:absolute;
+	height:0px;
+	top:0;
+	width:38%;
+	right:0;
+	overflow:visible;
+}
+.promo_benz .main .sections .section .player .info .title {
+	display:none;
+	top:25px;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:4.8em;
+	padding:5px 0 5px 40px;
+	color:#fff;
+	text-transform:uppercase;
+}
+.promo_benz .main .sections .section .player .info .subtitle {
+	display:none;
+	padding:0 0 20px 40px;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	font-size:2.0em;
+	color:#fff;
+}
+.promo_benz .main .sections .section .player .btn-video {
+	position:absolute;
+	width:130px;
+	height:90px;
+	right:220px;
+	bottom:17px;
+	cursor:pointer;
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.promo_benz .main .sections .section .player .btn-video .title {
+	position:absolute;
+	width:140px;
+	left:93px;
+	top:47px;
+	font-size:1.2em;
+	font-family:'PTSans CaptionBold', Arial, sans-serif;
+	text-transform:uppercase;
+	color:#06a0db;
+	cursor:pointer;
+	overflow:hidden;
+}
+.promo_benz .main .sections .section .player .btn-model {
+	bottom:43px;
+}
